@@ -1,4 +1,5 @@
 Overview
+
 This Java program calculates the number of intersections between various chords in a circle. The algorithm is based on a sweep line approach combined with a balanced binary search tree for efficient computation. It's designed to handle a set of chords, each defined by their start and end radian measures on the circle's circumference.
 
 Algorithm
@@ -8,6 +9,7 @@ Sorting and Preparation: Chords are first sorted based on their start points and
 Sweep Line with TreeSet: A sweep line technique is used along with a TreeSet to keep track of active chords (chords that the sweep line is currently intersecting). The TreeSet is ordered by the end points of the chords, allowing for efficient addition and removal of chords.
 
 Key Components
+
 Chord Class: Represents a chord with start and end points.
 ChordEndComparator: Custom comparator for ordering chords in the TreeSet based on their end points.
 Main Algorithm: Iterates through each chord, updates the set of active chords, and counts intersections.
